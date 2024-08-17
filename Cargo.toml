@@ -26,9 +26,11 @@ cfg-if = "0.1"
 
 [features]
 dalek = ["curve25519-dalek", "bulletproofs"]
+#arkworks = ["curve25519-dalek", "bulletproofs"]
 arkworks = []
 class = []
-default = ["arkworks"]
+default = ["dalek"]
+#default = ["arkworks"]
 
 [dev-dependencies]
 criterion = "0.3"
